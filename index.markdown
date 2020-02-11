@@ -4,3 +4,4 @@
 
 layout: home
 ---
+## Learn to create and publish Jekyll static sites. Check out Git and Markdown stuff. Troubleshoot.
