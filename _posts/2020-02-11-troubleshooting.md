@@ -3,18 +3,24 @@ layout: post
 title: Troubleshooting
 date: 2020-02-11 14:18 -0700
 ---
-**When pushing your site to GitHub:**
 
-If you get `Fatal error - origin already exists`, then run `Git remote rm origin`, then try `git push -u origin` again. You may also have to delete your repo (**not** your site) and start again.
+# General troubleshooting go-to:
 
-**If gems or themes cannot be found:**
-* You may need to move the mentioned files into the library of gems inside your ruby software files. Sometimes gems don't go into the right spot, or you downloaded them outside the terminal. For this fix you'll need to find your ruby files, then dive into ruby/lib/ruby/gems/2.6.0/gems, and move the right files in.
-* Replace theme name in config.yml and gem ‘theme-name’ in gemfile
+* Copy/paste the error the terminal is reporting into google and see what people are saying
+* [Jekyll Docs Troubleshooting](https://jekyllrb.com/docs/troubleshooting/)
 
-**Terminal reports that it can’t find files after editing things in the layouts/css/scss:**
-* Reinstall and the theme gem you're working with
-* Rename ‘destination’ folder and delete old one
-* Try `bundle exec jekyll build again`
+# Some issues we encountered:
+
+**Terminal reports gems or themes cannot be found after installing theme gem:**
+
+* You may need to move the mentioned files into the library of gems inside your ruby software files. Sometimes gems don't go into the right spot, or you downloaded them outside the terminal onto your desktop, for example. For this fix you'll need to find your ruby files, then dive into ruby/lib/ruby/gems/2.6.0/gems, and move the right theme files into the right spot.
+* Replace theme name in config.yml and gem "theme-name" in gemfile
+
+**Terminal reports that it can’t find theme files after editing things in layouts/css/scss and attempting to build the site:**
+
+1. Reinstall the theme gem you're working with eg): `install jekyll-theme-athena`
+2. Rename ‘destination’ in config.yml and delete old destination folder (public)
+3. Try `bundle exec jekyll build again`
 
 Reminder:
 
@@ -24,14 +30,14 @@ In config.yml:
 In gitignore:
 `Public` (so that we don’t push our public site files into git)
 
-**When editing your site locally, get rid of baseurl/url in config.yml**
+*Note that you do not have to name the destination folder "public", you can name it anything you'd like.*
+
+**Generally, empty your baseurl/url tags in config.yml - if they contain anything (while you're editing) you may encounter errors.**
 
 **When a theme requires a different version of Jekyll**
-* Downgrade Jekyll to previous versions for some themes (find and replace the Jekyll version in config.yml file), then `Bundle update jekyll`
-* You may also need `Bundle update` or `bundle install` depending on the issue
-
-**General Troubleshooting Strategies**
-
-* Copy/paste the error the terminal is reporting into google and see what people are saying
+* Downgrading Jekyll to previous versions is necessary for some themes
+1. Find and replace the Jekyll version with the necessary Jekyll version (the terminal will tell you which) in config.yml file, then `Bundle update jekyll`
+2. You may also need to `Bundle update` and/or `bundle install` depending on the issue
+3. You may also need to delete the gemfile *.lock* (**note: NOT the gemfile**) and try these steps again
 
 [Back to home]({% link index.markdown %})

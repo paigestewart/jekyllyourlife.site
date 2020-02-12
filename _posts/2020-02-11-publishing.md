@@ -6,9 +6,12 @@ date: 2020-02-11 15:45 -0700
 # When you're ready to publish, follow the following steps.
 Don't worry if your site isn't totally finished. This process sets you up for automatic updates, so your site will update as you go.
 
+1. In your terminal while `cd` inside your site files, run `bundle exec jekyll build`  
+  * This will build your website into either _ site files, or public, if you've added `destination: public` in your config.yml file, like we recommended
+  * Don't forget to add public into your gitignore file
 1. Open your GitHub account
 2. Create new repository
-3. Name your repo, select public, don't worry about a license or a README for now, and create
+3. Name your repo (often the name your website will be), select public, don't worry about a license or a README for now, and click create
 4. You are going to push your local repo up to GitHub
    * Make sure HTTPS is selected
    * Copy and execute the code under *How to push an existing repository from command line* into your terminal
