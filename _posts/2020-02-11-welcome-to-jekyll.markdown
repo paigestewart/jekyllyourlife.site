@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  Welcome to Jekyll post that comes with every new Jekyll Site
 date:   2020-02-11 11:36:08 -0700
 categories: jekyll update
 ---
