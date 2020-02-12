@@ -4,6 +4,7 @@ title: Create a new Jekyll site
 date: 2020-02-11 15:54 -0700
 ---
 # First, you must install the environment
+
 Jekyll requires Ruby, Git Bash and some other software. Check [here](https://jekyllrb.com/docs/installation/) to see what you need. You'll also need an account at [GitHub](https://github.com/).
 
 *Be sure to check the installation guides for your Windows, Mac or Linux system.*
@@ -13,6 +14,7 @@ Jekyll requires Ruby, Git Bash and some other software. Check [here](https://jek
 *Note that you'll also need a text editor like Atom, Visual Basic, etc.*
 
 # Once you've finished installing what you need
+
 Open your terminal:
 
 `Cd` navigate to wherever you want the site files to live - eg): `cd documents`
@@ -41,8 +43,17 @@ Open your terminal:
 
 `Bundle lock --add-platform x86_64-linux` another necessary linking piece
 
+# A couple extras
+
+**In your gemfile,** install this plugin: `‘jekyll-compose’, group: [:jekyll_plugins]` so you'll be able to post easily from the command line. Run `bundle` in the command line.
+
+`bundle exec jekyll post "postTitle"` is the command to post.
+
+**In your config.yml file,** add a line reading `destination: public`, then add `public` to your gitignore file - this will put all your site files into one file for publishing, but won't push those exact files to GitHub when the time comes.
+
 # And Voila!
 In your terminal, `bundle exec jekyll serve` will start up your new site on a preview server, likely localhost:4000 in your browser, and
 holding CTRL or CMD + C will stop the preview server
+
 
 [Back to home]({% link index.markdown %})
