@@ -8,7 +8,7 @@ Jekyll requires Ruby, Git Bash and some other software. Check [here](https://jek
 
 *Be sure to check the installation guides for your Windows, Mac or Linux system.*
 
-*Be sure to note where you've installed Ruby - you'll likely be searching for and working with those files later*
+*Be sure to note where you've installed Ruby - you'll likely be searching for and working with those files later.*
 
 *Note that you'll also need a text editor like Atom, Visual Basic, etc.*
 
