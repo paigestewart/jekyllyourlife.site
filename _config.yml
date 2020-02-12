@@ -22,7 +22,7 @@ title: Jekyll your life - NAIT Library
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   NAIT Library's guide to creating websites with Jekyll.
-baseurl: "/home" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "www.jekyllyourlife.site" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:

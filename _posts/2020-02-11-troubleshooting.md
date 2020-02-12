@@ -33,3 +33,5 @@ In gitignore:
 **General Troubleshooting Strategies**
 
 * Copy/paste the error the terminal is reporting into google and see what people are saying
+
+[Back to home]({% link index.markdown %})
