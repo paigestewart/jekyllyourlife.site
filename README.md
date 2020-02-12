@@ -1,4 +1,4 @@
-# [jekyllyourlife.site](www.jekyllyourlife.site)
+# [jekyllyourlife.site](https://www.jekyllyourlife.site)
 
 ## This site is to supplement the *Jekyll your resume* tech workshop at NAIT Library in February, 2020. 
 
