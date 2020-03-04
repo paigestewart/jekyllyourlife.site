@@ -18,9 +18,10 @@ date: 2020-02-11 14:18 -0700
 
 **Terminal reports that it can’t find theme files after editing things in layouts/css/scss and attempting to build the site:**
 
-1. Reinstall the theme gem you're working with eg): `install jekyll-theme-athena`
+1. Make sure you're in the right folder! If your actual folder is called JekyllSite but you're in jekyllsite, the system may get confused.
+1. Reinstall the theme gem you're working with eg): `gem install jekyll-theme-athena`
 2. Rename ‘destination’ in config.yml and delete old destination folder (public)
-3. Try `bundle exec jekyll build again`
+3. Try `bundle exec jekyll serve` again
 
 Reminder:
 
@@ -36,7 +37,7 @@ In gitignore:
 
 **When a theme requires a different version of Jekyll**
 * Downgrading Jekyll to previous versions is necessary for some themes
-1. Find and replace the Jekyll version with the necessary Jekyll version (the terminal will tell you which) in config.yml file, then `Bundle update jekyll`
+1. Find and replace the Jekyll version with the necessary Jekyll version (the terminal will tell you which) in your gemfile, then `Bundle update jekyll`
 2. You may also need to `Bundle update` and/or `bundle install` depending on the issue
 3. You may also need to delete the gemfile *.lock* (**note: NOT the gemfile**) and try these steps again
 
